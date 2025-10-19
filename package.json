@@ -1,0 +1,52 @@
+{
+  "name": "harshvardhan-sekar-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Harshvardhan Sekar - Data Scientist, ML Engineer, and Credit Risk Analyst",
+  "main": "index.html",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "vercel --prod",
+    "preview": "vercel"
+  },
+  "keywords": [
+    "portfolio",
+    "data-science",
+    "machine-learning",
+    "credit-risk",
+    "hsbc",
+    "python",
+    "tensorflow",
+    "tableau",
+    "nextjs",
+    "vercel"
+  ],
+  "author": "Harshvardhan Sekar",
+  "license": "MIT",
+  "homepage": "https://harshvardhan-sekar-portfolio.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshvardhan-sekar/harshvardhan-sekar-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harshvardhan-sekar/portfolio-website/issues"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
