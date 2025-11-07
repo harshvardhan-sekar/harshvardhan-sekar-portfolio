@@ -24,10 +24,12 @@ export default function Experience() {
               <h4>HSBC - Loss Forecasting & Credit Decision Modelling</h4>
               <span className="date">Aug 2022 - May 2024</span>
               <p>
-                Led tracking of $18B+ mortgage and $230M+ credit card portfolios. Streamlined SAS 
-                reporting processes saving 132 calendar days annually and improved team productivity 
-                by 40%. Optimized data migration to Google Cloud Platform and conducted Annual 
-                Operations Planning using PyCraft Loss Forecasting tool.
+                Tracked $18B+ mortgage and $230M+ credit card portfolios across U.S. retail and consumer 
+                lending segments. Led IFRS9/CECL provisioning for 200K+ accounts, monitoring ECL deltas 
+                and ensuring reserves aligned with risk thresholds. Automated SAS and SQL pipelines for 
+                receivables, roll-rate, and loss forecasting reports, improving efficiency by 40%. 
+                Supported capital stress testing and scenario-weighted forecasting using macroeconomic 
+                drivers (GDP, HPI, Unemployment).
               </p>
             </div>
           </div>

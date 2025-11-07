@@ -9,9 +9,14 @@ export default function Projects() {
     if (activeFilters.includes('all')) {
       setFilteredProjects(projectsData)
     } else {
-      setFilteredProjects(projectsData.filter(project => 
-        activeFilters.includes(project.category)
-      ))
+      setFilteredProjects(projectsData.filter(project => {
+        // Handle both string categories and array categories
+        const projectCategories = Array.isArray(project.category) 
+          ? project.category 
+          : [project.category]
+        // Check if any of the project's categories match any active filter
+        return projectCategories.some(cat => activeFilters.includes(cat))
+      }))
     }
   }, [activeFilters])
 
@@ -38,7 +43,8 @@ export default function Projects() {
       'nlp': 'Natural Language Processing',
       'credit': 'Credit Risk',
       'viz': 'Data Visualization',
-      'de': 'Data Engineering'
+      'de': 'Data Engineering',
+      'consulting': 'Information Consulting'
     }
     return categoryNames[category] || category
   }
@@ -97,15 +103,34 @@ export default function Projects() {
           >
             Data Engineering
           </button>
+          <button 
+            className={`filter-btn ${activeFilters.includes('consulting') ? 'active' : ''}`}
+            onClick={() => handleFilterClick('consulting')}
+            data-filter="consulting"
+          >
+            Information Consulting
+          </button>
         </div>
         <div className="projects-grid">
           {filteredProjects.map(project => (
-            <div key={project.id} className="project-card" data-category={project.category}>
+            <div key={project.id} className="project-card" data-category={Array.isArray(project.category) ? project.category.join(' ') : project.category}>
               <div className="project-image">
-                <i className={project.image}></i>
+                {project.imageUrl ? (
+                  <img src={project.imageUrl} alt={project.title} className="project-image-img" />
+                ) : (
+                  <i className={project.image}></i>
+                )}
               </div>
               <div className="project-content">
-                <span className="project-category">{getCategoryName(project.category)}</span>
+                {Array.isArray(project.category) ? (
+                  <div className="project-categories">
+                    {project.category.map((cat, index) => (
+                      <span key={index} className="project-category">{getCategoryName(cat)}</span>
+                    ))}
+                  </div>
+                ) : (
+                  <span className="project-category">{getCategoryName(project.category)}</span>
+                )}
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tech">
@@ -115,13 +140,13 @@ export default function Projects() {
                 </div>
                 <div className="project-links">
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <i className="fab fa-github"></i>
-                    GitHub
+                    <i className={project.github.includes('drive.google.com') ? 'fab fa-google-drive' : 'fab fa-github'}></i>
+                    {project.github.includes('drive.google.com') ? 'View Project' : 'GitHub'}
                   </a>
                   {project.demo !== '#' && (
                     <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link secondary">
-                      <i className="fas fa-external-link-alt"></i>
-                      Demo
+                      <i className={project.demo.includes('tableau.com') ? 'fab fa-tableau' : 'fas fa-external-link-alt'}></i>
+                      {project.demo.includes('tableau.com') ? 'Tableau Visuals' : 'Demo'}
                     </a>
                   )}
                 </div>

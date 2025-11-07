@@ -34,6 +34,7 @@
     "url": "https://github.com/harshvardhan-sekar/portfolio-website/issues"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "next": "^14.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

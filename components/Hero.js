@@ -37,8 +37,7 @@ export default function Hero() {
           </h1>
           <h2>Transforming Data into Strategic Insights</h2>
           <p>
-            MS in Information Management from UIUC (Aug 2024 - May 2026) | 2+ years at HSBC in Credit Risk Analytics | 
-            Passionate about leveraging AI/ML to solve complex financial challenges and drive data-driven decision making.
+            MS Information Management at UIUC (May 2026) | Former Credit Risk Analyst at HSBC | Transforming complex data into actionable intelligence across Credit Risk, Healthcare, and AI.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
