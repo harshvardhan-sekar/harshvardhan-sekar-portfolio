@@ -57,12 +57,10 @@ export default function Hero() {
             Hi, I'm <span className="highlight">{name}</span>
             {showCursor && <span className="cursor">|</span>}
           </h1>
-          <h2>
-            Open to{' '}
+          <h2 className="hero-roles">
             <span className={`hero-role-highlight ${isRoleVisible ? 'fade-in' : 'fade-out'}`}>
               {roles[currentRoleIndex]}
-            </span>{' '}
-            roles
+            </span>
           </h2>
           <p>
             MS Information Management at UIUC (May 2026) | Former Credit Risk Analyst at HSBC | Transforming complex data into actionable intelligence across Credit Risk, Healthcare, and AI.
