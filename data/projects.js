@@ -61,7 +61,7 @@ export const projectsData = [
     github: "https://drive.google.com/drive/folders/1IoTwDxXTz8fOlEsRLbZvAmglmRFSCt00",
     demo: "#",
     image: "fas fa-trophy",
-    imageUrl: "/images/projects/Brisbane-2032.png",
+    imageUrl: "/images/projects/brisbane-2032.png",
     status: "completed",
     date: "2024"
   },
