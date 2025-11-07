@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react'
 
+const roles = ['Credit Risk Analyst', 'Data Scientist', 'Machine Learning Engineer']
+
 export default function Hero() {
   const [name, setName] = useState('')
   const [showCursor, setShowCursor] = useState(true)
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0)
+  const [isRoleVisible, setIsRoleVisible] = useState(true)
 
   useEffect(() => {
     const fullName = 'Harshvardhan Sekar'
@@ -27,6 +31,24 @@ export default function Hero() {
     }, 500)
   }, [])
 
+  useEffect(() => {
+    let fadeTimeout
+    const cycleInterval = setInterval(() => {
+      setIsRoleVisible(false)
+      fadeTimeout = setTimeout(() => {
+        setCurrentRoleIndex(prev => (prev + 1) % roles.length)
+        setIsRoleVisible(true)
+      }, 300)
+    }, 3000)
+
+    return () => {
+      clearInterval(cycleInterval)
+      if (fadeTimeout) {
+        clearTimeout(fadeTimeout)
+      }
+    }
+  }, [])
+
   return (
     <section id="home" className="hero">
       <div className="hero-content">
@@ -35,7 +57,13 @@ export default function Hero() {
             Hi, I'm <span className="highlight">{name}</span>
             {showCursor && <span className="cursor">|</span>}
           </h1>
-          <h2>Transforming Data into Strategic Insights</h2>
+          <h2>
+            Open to{' '}
+            <span className={`hero-role-highlight ${isRoleVisible ? 'fade-in' : 'fade-out'}`}>
+              {roles[currentRoleIndex]}
+            </span>{' '}
+            roles
+          </h2>
           <p>
             MS Information Management at UIUC (May 2026) | Former Credit Risk Analyst at HSBC | Transforming complex data into actionable intelligence across Credit Risk, Healthcare, and AI.
           </p>

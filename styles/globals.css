@@ -311,6 +311,27 @@ body {
     letter-spacing: 0.5px;
 }
 
+.hero-role-highlight {
+    display: inline-block;
+    background: linear-gradient(135deg, #f39c12 0%, #f97316 50%, #facc15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+}
+
+.hero-role-highlight.fade-out {
+    opacity: 0;
+    transform: translateY(-6px);
+}
+
+.hero-role-highlight.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .hero-text p {
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
