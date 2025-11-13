@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const roles = ['Credit Risk Analyst', 'Data Scientist', 'ML Engineer']
+const roles = ['Credit Risk Analyst', 'Data Scientist', 'ML Engineer', 'Data Analyst']
 
 export default function Hero() {
   const [name, setName] = useState('')
