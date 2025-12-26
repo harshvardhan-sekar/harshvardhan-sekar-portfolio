@@ -32,7 +32,7 @@ export const projectsData = [
     description: "Designed a comprehensive analytics and machine learning pipeline to predict Oscar-winning films and Emmy-winning TV shows using audience metrics, critic ratings, and production metadata. Integrated data engineering, predictive modeling, and visualization in a single workflow combining Tableau Prep, Python ML models, and Power BI dashboards.",
     category: "ml",
     technologies: ["Python", "XGBoost", "Random Forest", "Pandas", "Scikit-learn", "NumPy", "Tableau Prep", "Power BI"],
-    github: "https://drive.google.com/drive/folders/18GbW19gWUXEKcxog2iAD07DGMmC0Hcwb",
+    github: "https://github.com/harshvardhan-sekar/red-carpet-analytics/blob/main/README.md",
     demo: "https://public.tableau.com/app/profile/harshvardhan.sekar",
     image: "fas fa-trophy",
     imageUrl: "/images/projects/oscar-award-winning-image-predictions.png",
