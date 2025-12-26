@@ -92,11 +92,11 @@ export const projectsData = [
   // },
   {
     id: 7,
-    title: "Multimodal Cloze in Comics using Vision-Language Models (Ongoing)",
+    title: "Multimodal Cloze in Comics using Vision-Language Models",
     description: "Building an end-to-end vision-language modeling pipeline to perform closure—predicting missing dialogue and generating corresponding artwork between comic panels. Leverages LLaVA, OpenFlamingo, and Stable Diffusion to jointly reason over text and imagery from the COMICS dataset (1.2M panels). Includes preprocessing with YOLOv8 for panel segmentation, CRAFT for text balloon detection, and EasyOCR for dialogue extraction, enabling multimodal narrative understanding and AI-assisted comic creation.",
     category: ["cv", "nlp"],
     technologies: ["Python", "PyTorch", "YOLOv8", "CRAFT", "EasyOCR", "LLaVA", "OpenFlamingo", "Stable Diffusion", "Hugging Face Diffusers"],
-    github: "https://drive.google.com/drive/folders/16-UYPPj3PAF7dpPvwn8dcFX0X9votU0t",
+    github: "https://github.com/harshvardhan-sekar/beyond-the-frame/blob/main/README.md",
     demo: "#",
     image: "fas fa-images",
     imageUrl: "/images/projects/multimodal-cloze.png",
