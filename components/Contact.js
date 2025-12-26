@@ -140,6 +140,13 @@ export default function Contact() {
                 <p>linkedin.com/in/harshvardhan-sekar</p>
               </div>
             </a>
+            <a href="https://github.com/harshvardhan-sekar?tab=repositories" target="_blank" rel="noopener noreferrer" className="contact-item contact-link">
+              <i className="fab fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <p>github.com/harshvardhan-sekar</p>
+              </div>
+            </a>
             <a href="https://drive.google.com/drive/folders/1AXhb6GebVKAux7dnES2nw7B6RJAysFgu?usp=sharing" target="_blank" rel="noopener noreferrer" className="contact-item contact-link">
               <i className="fas fa-file-pdf"></i>
               <div>
