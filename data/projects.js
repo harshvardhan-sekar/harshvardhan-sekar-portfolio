@@ -6,7 +6,7 @@ export const projectsData = [
     description: "Built a supervised NLP pipeline leveraging MedQuAD dataset (47K+ NIH-sourced Q-A pairs) to enhance reliability in medical question answering. Integrated transformer models (T5, BioBART, PubMedBERT) with dense retrievers (SBERT, ColBERTv2) in a Retrieval-Augmented Generation architecture, improving factual accuracy for domain-specific healthcare applications.",
     category: "nlp",
     technologies: ["Python", "Transformers", "T5", "BioBART", "SBERT", "ColBERTv2", "PyTorch", "Pandas", "ROUGE", "BERTScore", "UMLS"],
-    github: "https://drive.google.com/drive/folders/1NSdnuuvminwojnERVqrkOKL3wbHRk1lJ",
+    github: "https://drive.google.com/file/d/1ermxHntECpzusBXKBaztQevm-833sHuS/view?usp=drive_link",
     demo: "#",
     image: "fas fa-stethoscope",
     imageUrl: "/images/projects/medical-qa-agent.png",
