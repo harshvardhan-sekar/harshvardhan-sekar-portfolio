@@ -19,7 +19,7 @@ export const projectsData = [
     description: "Built an end-to-end credit risk framework across PD, EAD, and LGD with ECL = PD × EAD × LGD aligned with IFRS 9/Basel III. Trained Logistic Regression and XGBoost models for PD, Decision Trees and Random Forests for EAD and LGD, producing portfolio-level ECL insights by grade, state, income, and DTI with total portfolio ECL of $194.9M.",
     category: "credit",
     technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost", "Matplotlib"],
-    github: "https://drive.google.com/drive/folders/1JifOsEc6ykpxiP-MQvUMgqL_8xRmXslF",
+    github: "https://drive.google.com/drive/u/0/folders/1JifOsEc6ykpxiP-MQvUMgqL_8xRmXslF",
     demo: "#",
     image: "fas fa-chart-line",
     imageUrl: "/images/projects/lendingclub-credit-risk.png",
