@@ -87,6 +87,12 @@ export default function Hero() {
               src="/images/studio-ghibli-avatar.png" 
               alt="Harshvardhan Sekar - Studio Ghibli Avatar" 
               className="hero-avatar"
+              width="350"
+              height="350"
+              loading="eager"
+              onLoad={(e) => {
+                e.target.classList.add('loaded')
+              }}
               onError={(e) => {
                 e.target.style.display = 'none'
                 e.target.nextElementSibling.style.display = 'flex'
