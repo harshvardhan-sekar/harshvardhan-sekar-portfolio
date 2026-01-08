@@ -90,9 +90,8 @@ export default function Hero() {
               width="350"
               height="350"
               loading="eager"
-              onLoad={(e) => {
-                e.target.classList.add('loaded')
-              }}
+              fetchPriority="high"
+              decoding="async"
               onError={(e) => {
                 e.target.style.display = 'none'
                 e.target.nextElementSibling.style.display = 'flex'

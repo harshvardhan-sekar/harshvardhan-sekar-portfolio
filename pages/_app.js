@@ -19,6 +19,14 @@ function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
           rel="stylesheet" 
         />
+        
+        {/* Preload hero image for faster initial load */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/images/studio-ghibli-avatar.png"
+          fetchPriority="high"
+        />
       </Head>
       <Component {...pageProps} />
     </>
