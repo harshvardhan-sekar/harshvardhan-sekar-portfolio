@@ -85,13 +85,12 @@ export default function Hero() {
           <div className="avatar-container">
             <img 
               src="/images/studio-ghibli-avatar.png" 
-              srcSet="/images/studio-ghibli-avatar.png 1x, /images/studio-ghibli-avatar.png 2x"
               alt="Harshvardhan Sekar - Studio Ghibli Avatar" 
               className="hero-avatar"
+              width="350"
+              height="350"
               loading="eager"
               fetchPriority="high"
-              decoding="async"
-              style={{ imageRendering: 'auto' }}
               onError={(e) => {
                 e.target.style.display = 'none'
                 e.target.nextElementSibling.style.display = 'flex'
