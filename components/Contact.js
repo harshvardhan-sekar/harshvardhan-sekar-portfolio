@@ -140,7 +140,7 @@ export default function Contact() {
                 <p>linkedin.com/in/harshvardhan-sekar</p>
               </div>
             </a>
-            <a href="https://github.com/harshvardhan-sekar?tab=repositories" target="_blank" rel="noopener noreferrer" className="contact-item contact-link">
+            <a href="https://github.com/harshvardhan-sekar" target="_blank" rel="noopener noreferrer" className="contact-item contact-link">
               <i className="fab fa-github"></i>
               <div>
                 <h4>GitHub</h4>
