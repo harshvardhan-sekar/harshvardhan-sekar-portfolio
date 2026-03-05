@@ -58,7 +58,7 @@ export const projectsData = [
     description: "Developed a consulting-grade strategy using McKinsey's 7-Step framework to integrate AI technologies — including Digital Twins, Predictive Analytics, and Smart City Systems — to enhance sustainability, reduce costs (~A$300M), and lower carbon emissions (~8,000 tons CO₂e) for the Brisbane 2032 Olympic Games. Combined cost-benefit modeling, vendor benchmarking, and an implementation roadmap aligned with IOC sustainability targets, delivering a phased rollout strategy for AI-powered venue optimization, energy management, and operational efficiency.",
     category: "consulting",
     technologies: ["Tableau", "Excel", "AWS", "McKinsey Framework", "MECE", "Cost-Benefit Analysis"],
-    github: "https://drive.google.com/drive/folders/1IoTwDxXTz8fOlEsRLbZvAmglmRFSCt00",
+    github: "https://github.com/harshvardhan-sekar/ai-smart-infrastructure-brisbane-olympics",
     demo: "#",
     image: "fas fa-trophy",
     imageUrl: "/images/projects/brisbane-2032.png",
