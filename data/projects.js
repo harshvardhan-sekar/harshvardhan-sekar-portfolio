@@ -71,7 +71,7 @@ export const projectsData = [
     description: "Built a scalable Snowflake data warehouse solution to ingest, clean, and validate Netflix catalog metadata using Python preprocessing and OMDb API verification. Validated runtime/duration data for 7,787+ titles, identifying and correcting ~27% with inconsistencies (e.g., 1-minute TV shows, 6-minute movies). Implemented ELT pipelines with star schema dimensional modeling to improve data accuracy for recommendation systems, catalog quality assurance, and high-performance analytics.",
     category: "de",
     technologies: ["Python", "Snowflake", "SQL", "OMDb API", "ELT", "Dimensional Modeling", "Data Validation"],
-    github: "https://drive.google.com/drive/folders/1VlC8y6x1bWORpJFOlnpmF9HODHTYcDO7",
+    github: "https://github.com/harshvardhan-sekar/netflix-snowflake-warehouse",
     demo: "#",
     image: "fas fa-database",
     imageUrl: "/images/projects/netflix-warehouse.png",
