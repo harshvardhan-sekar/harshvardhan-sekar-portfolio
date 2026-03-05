@@ -45,7 +45,7 @@ export const projectsData = [
     description: "Built a four-class deep learning classifier to detect Normal, Bacterial Pneumonia, Viral Pneumonia, and COVID-19 from chest X-rays using transfer-learned architectures (VGG-16, DenseNet-201, Xception, EfficientNet-B0). Curated multiple open-source CXR datasets into a unified training pipeline with preprocessing, data augmentation, and transfer learning from ImageNet weights. The best model (VGG-16) achieved ~90% accuracy with robust differentiation between pneumonia subtypes.",
     category: "cv",
     technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy", "Pandas", "Matplotlib"],
-    github: "https://drive.google.com/drive/folders/1TflHC1mJcdsHXIJAVQHozNDI49irpcRd",
+    github: "https://drive.google.com/file/d/1eMHF4S-ycj8qxn9R_SYwgASOWEKGIHkt/view",
     demo: "#",
     image: "fas fa-x-ray",
     imageUrl: "/images/projects/pneumonia-detection.png",
